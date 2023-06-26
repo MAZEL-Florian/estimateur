@@ -1,0 +1,355 @@
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+  font-family: "Sora";
+}
+@font-face {
+  font-family: "Sora";
+  src:url('/font/Sora-VariableFont_wght.ttf') format('truetype')
+}
+body {
+	display : table;
+	width: 100%;
+}
+footer {
+	display : table-row;
+	height: 0px; /* à titre d'exemple */
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  /* max-width: 400px; */
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h1{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+.rokett-primary{
+  background-color: #18182F;
+}
+.rokett-secondary{
+  background-color: #35008B;
+}
+.rokett-gradient{
+  background: linear-gradient(#00FFFF, #8F00FF)
+}
+.rokett-gradient-2{
+  background: linear-gradient(#FF3AB0, #FF3A90, #E744F6, #862DFB, #00DBF9);
+}
+.rokett-gradient-2-rgba{
+  background: linear-gradient(rgba(255, 58, 176, 0.4), rgba(255, 58, 144, 0.4), rgba(231, 68, 246, 0.4), rgba(134, 45, 251, 0.4), rgba(0, 219, 249, 0.4));
+}
+.rokett-gradient-3{
+  background: linear-gradient(#18182F, #280069)
+}
+.rokett-gradient-4{
+  background: linear-gradient(#4341B8, #310082);
+}
+
+.rokett-border{
+  background-color: rgba(0,0,0,.25);
+  border-radius: 20px;
+  padding: 44px;
+}
+.rokett-footer{
+  background-color: #ABABAB;
+}
+
+.rokett-gradient-container{
+  background: linear-gradient(#18182F, #280069)
+}
+
+.rokett-top-table{
+  background-color: #00FFFF;
+}
+.rokett-label{
+  font-size: 14px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.rokett-box:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.btn-check:active+.rokett-box, .btn-check:checked+.rokett-box, .rokett-box.active, .rokett-box:active, .show>.rokett-box.dropdown-toggle {
+  color: rgb(40, 0, 105);
+  background: hsla(0,0%,100%,.5);
+  font-weight: bold;
+}
+
+.rokett-no-border{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+
+.rokett-bg-input{
+background-color: transparent;
+border-radius: 8px;
+border: 1px solid rgba(255, 255, 255, 0.75);
+color: white;
+height: 52px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.rokett-nombre::-webkit-outer-spin-button,
+.rokett-nombre::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.rokett-bg-input::placeholder{
+  color: #f9f9f9;
+}
+.rokett-bg-input:focus{
+  background-color: transparent;
+  color: white;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.rokett-bg-input:disabled{
+  background-color: transparent;
+}
+
+.rokett-titre{
+  font-size: 36px;
+    line-height: 180%;
+}
+.rokett-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* padding: 6px 16px 5px; */
+  gap: 156px;
+  width: 99px;
+  height: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+  font-size: .875rem;
+  color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.rokett-shadow{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.rokett-input-mois[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.rokett-label-mois {
+  color: lighten(blue,40%);
+  display: flex;
+  cursor: pointer;
+  font-weight: bold;
+  padding-left: 11%;
+  padding-right: 11%;
+  margin: auto;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+}
+.rokett-label-mois:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.rokett-input-mois[type=radio]:checked + .rokett-label-mois{
+  color: rgb(40, 0, 105);
+  background: hsla(0,0%,100%,.5);
+}
+
+.rokett-label-mois + .rokett-input-mois[type=radio] + .rokett-label-mois {
+  border-left: 1px solid rgba(255, 255, 255, 0.75);
+}
+.radio-group {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  display: flex;
+  margin: auto;
+
+  border-radius: 10px;
+  overflow: hidden;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rokett-input-range[type=range] {
+  height: 38px;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  background-color: transparent;
+}
+.rokett-input-range[type=range]:focus {
+  outline: none;
+}
+.rokett-input-range[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px; /* Hauteur barre range */
+  cursor: pointer;
+  animation: 0.2s;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+.rokett-input-range[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  height: 30px;
+  width: 12px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -11px;
+}
+.rokett-input-range[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(255, 255, 255, 0.75);
+}
+.rokett-input-range[type=range]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animation: 0.2s;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+.rokett-input-range[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.rokett-input-range[type=range]::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animation: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.rokett-input-range[type=range]::-ms-fill-lower {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+}
+.rokett-input-range[type=range]::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+}
+.rokett-input-range[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.rokett-input-range[type=range]:focus::-ms-fill-lower {
+  background: rgba(255, 255, 255, 0.75);
+}
+.rokett-input-range[type=range]:focus::-ms-fill-upper {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.blog {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.blog img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.blog:hover img {
+  transform: scale(1.5);
+}
+.test {
+    color:blue;
+}
