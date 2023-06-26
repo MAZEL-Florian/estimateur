@@ -237,8 +237,6 @@
 
 <template>
     <div class="container">
-        <h3 class="rokett-titre fw-bold text-sm-center">Simulateur salaire brut / salaire net</h3>
-
 
         <!-- SALAIRE BRUT / SALAIRE NET -->
 
