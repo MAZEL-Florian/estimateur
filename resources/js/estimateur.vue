@@ -236,7 +236,7 @@
 </script>
 
 <template>
-    <div class="container">
+    <div class="container barometre barometre-display">
 
         <!-- SALAIRE BRUT / SALAIRE NET -->
 
