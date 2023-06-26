@@ -76,17 +76,7 @@
                 this.mensuelNet = "";
                 this.annuelBrut = "";
             }
-            // paye = [this.horaireBrut, this.mensuelBrut, this.annuelBrut, this.horaireNet, this.mensuelNet, this.annuelNet];
-            // for(var r = 0, n = paye.length; r < n; r++){
-            //     if(donnee !== paye[i]){
-            //         this.NumbersOnly(donnee);
-            //         paye[r] = "";
-            //     }
-            //     else{
-            //         this.NumbersOnly(donnee);
-            //         paye[r] = "";
-            //     }
-            // }
+
         },
     },
 
@@ -237,6 +227,8 @@
 
 <template>
     <div class="container barometre barometre-display">
+
+
 
         <!-- SALAIRE BRUT / SALAIRE NET -->
 
