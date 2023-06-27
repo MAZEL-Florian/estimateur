@@ -270,9 +270,7 @@
 
                         <input v-model.number="pick" v-bind:value="0.25" class="btn-check" type="radio" name="inlineRadioOptions" id="cadre">
                         <label class="btn rokett-box mx-auto" for="cadre">Salarié cadre</label>
-                    </div>
 
-                    <div class="row justify-content-center pt-sm-2">
                         <input v-model.number="pick" v-bind:value="0.45" class="btn-check" type="radio" name="inlineRadioOptions" id="professionLiberale">
                         <label class="btn rokett-box mx-auto" for="professionLiberale">Profession libérale</label>
 
